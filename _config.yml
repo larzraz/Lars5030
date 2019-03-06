@@ -23,7 +23,15 @@ description: A virtual proof that name is awesome!
 
 # List of links in the navigation bar
 navbar-links:
+  Blog: "blog"
+  Mine Mates: 
+    - Jesper: "https://enmango.dk"
+    - Julian: "https://codeiwrote.net"
+    - Lasse: "https://sanger.dk"
+    - Mathias: "https://mnabe.github.io"
+  Projekt Ordsome:"https://github.com/jesp209i/ordsome" 
   About Me: "aboutme"
+  
   
 
 # Image to show in the navigation bar - image must be a square (width = height)
