@@ -24,6 +24,8 @@ description: A virtual proof that name is awesome!
 # List of links in the navigation bar
 navbar-links:
   Blog: "blog"
+  Mine Emner:
+    - Xamarin.Forms: "xamarinforms"
   Mine Mates: 
     - Jesper: "https://enmango.dk"
     - Julian: "https://codeiwrote.net"
