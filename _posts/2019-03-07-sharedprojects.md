@@ -11,8 +11,28 @@ Noget af det man skal tænke over når man laver cross platform developement er 
 Når man laver en reference til et shared project bliver det håndteret som at alt indholdet i shared projected er addet direkte til det andet projekt når det bliver compilet.  
 Her er fra et projekt jeg har arbejdet med hvor man kan se der er et projekt for hver platform og et shared project(MyTunes.Shared)
 
+![Mytunes.PNG]({{site.baseurl}}/img/Mytunes.PNG)
 
+Man kan dele koden på 3 forskellige måder med shared projects, Conditional Compilation, class mirroring & Partial Class+methods. Jeg vil ikke gå i dybden med dem her men ganske kort er conditional compilation hvor man complileren udfører forskellig kode afhængig af parametre givet under complingen. Jeg kommer muligvis til at gå mere i dybden med det her i kommende indlæg. Jeg har brugt Conditional Compilation i mit project som kan ses her 
+```java
 
-Man kan dele koden på 3 forskellige måder med shared projects, Conditional Compilation, class mirroring & Partial Class+methods. Jeg vil ikke gå i dybden med dem her men ganske kort er conditional compilation hvor man complileren udfører forskellig kode afhængig af parametre givet under complingen. Jeg kommer muligvis til at gå mere i dybden med det her i kommende indlæg. Jeg har brugt Conditional Compilation i mit project som kan ses her[MyTunes2], hvor de forskellige if-directiver afgør hvilken kode der skal executes.
+private static Stream OpenData()
+		{
+#if __ANDROID__
+            return Android.App.Application.Context.Assets.Open(Filename);
+#elif  __IOS__
+            
+            
+            return File.OpenRead(Filename);
+
+#else
+
+            return null;
+#endif
+        }
+
+```
+
+, hvor de forskellige if-directiver afgør hvilken kode der skal executes.
 
 
