@@ -13,8 +13,9 @@ Her er fra et projekt jeg har arbejdet med hvor man kan se der er et projekt for
 
 ![Mytunes.PNG]({{site.baseurl}}/img/Mytunes.PNG)
 
-Man kan dele koden på 3 forskellige måder med shared projects, Conditional Compilation, class mirroring & Partial Class+methods. Jeg vil ikke gå i dybden med dem her men ganske kort er conditional compilation hvor man complileren udfører forskellig kode afhængig af parametre givet under complingen. Jeg kommer muligvis til at gå mere i dybden med det her i kommende indlæg. Jeg har brugt Conditional Compilation i mit project som kan ses her 
-```java
+Man kan dele koden på 3 forskellige måder med shared projects, Conditional Compilation, class mirroring & Partial Class+methods. Jeg vil ikke gå i dybden med dem her men ganske kort er conditional compilation hvor man complileren udfører forskellig kode afhængig af parametre givet under complingen. Jeg kommer muligvis til at gå mere i dybden med det her i kommende indlæg. Jeg har brugt Conditional Compilation i mit project som kan ses her: 
+
+```csharp
 
 private static Stream OpenData()
 		{
@@ -33,6 +34,6 @@ private static Stream OpenData()
 
 ```
 
-, hvor de forskellige if-directiver afgør hvilken kode der skal executes.
+Hvor de forskellige if-directiver afgør hvilken kode der skal executes. I det her tilfælde var det hvordan man åbnede en fil. Her kan man se den forskellige måde IOS og Android håndtere den funktion på.
 
 
