@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: sharedprojects
 ---
 Når man laver applikationer med Xamarin.forms. Håndtere man de platformspecifikke ting i et project for sig selv fx Xamarin.Driod for Andriod. Man har så mulighed for at dele bla logik der er fælles på tværs af platformene via et 3. project. Ikke al kode er (desværre) mulig at dele imellem platforme og der vil være imellem 14 og 30 % platformspecifik kode man er nød til at skrive. For at kode er mulig at dele på tværs af platformene er den altså nødsaget til at være uafhængig af platformspecifikke Api'er.
@@ -34,6 +34,6 @@ private static Stream OpenData()
 
 ```
 
-Hvor de forskellige if-directiver afgør hvilken kode der skal executes. I det her tilfælde var det hvordan man åbnede en fil. Her kan man se den forskellige måde IOS og Android håndtere den funktion på.
+Hvor de forskellige if-directiver afgør hvilken kode der skal executes. I det her tilfælde var det hvordan man åbnede en fil. Her kan man se den forskellige måde IOS og Android håndtere den funktion på. Shared projects er nemme at arbejde med, når det er mindre projekter hvor man har alle projektor i samme solution. For man er nødsaget til at have adgang til sourcekoden for at bearbejde den og det er ulempen ved at bruge det. Jeg vil senere sammenligne det med shared binaries og mine erfaringer med begge måder at gøre det på. 
 
 
