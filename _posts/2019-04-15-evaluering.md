@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: Evaluering - mit "manifest"
 ---
 Jeg har valgt Projektstyring som emne. Mit hovedfokus vil være opstart samt evalueringsprocessen
